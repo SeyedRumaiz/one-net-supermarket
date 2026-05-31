@@ -133,5 +133,3 @@ mvn test
 - `src/test/java/com/example/coursework/` — unit tests
 
 ---
-
-This README provides a clear overview for developers, interviewers, and maintainers of the supermarket inventory application.
