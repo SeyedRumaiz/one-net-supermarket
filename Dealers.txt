@@ -1,0 +1,24 @@
+Dilshan,0777345123,Colombo
+Cereal,Kelloggs,950.00,12
+Orange Juice,Tropicana,450.00,20
+Cheese,Anchor,1200.00,15
+Jayawardana,0777123345,Galle
+Toothpaste,Signal,180.00,30
+Dishwash,Vim,350.00,25
+Chocolate,KitKat,220.00,50
+Nimal,0789123456,Bampalapitiya
+Shampoo,Sunsilk,550.00,18
+Biscuits,Munchee,300.00,40
+Salt,MD,100.00,60
+Kevinesh,0779871234,Ragama
+Laundry Powder,Ariel,1150.00,12
+Yogurt,Anchor,250.00,25
+Peanut Butter,MD,700.00,10
+Neeshan,0776788760,Wattala
+Instant Noodles,Maggi,120.00,35
+Juice Box,Ribena,160.00,40
+Tissues,Softy,300.00,30
+Lasith,0779991111,Negombo
+Soap,Lifebuoy,140.00,45
+Jam,MD,380.00,20
+Hand Wash,Dettol,600.00,15

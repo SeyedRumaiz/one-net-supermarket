@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="viewItemsBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.ViewItemsController">
+   <top>
+      <MenuBar fx:id="viewMenuBar" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" styleClass="menu" text="Menu">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#mainMenuPopUp" text="Go to Menu" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" styleClass="menu" text="Item Operations">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#addItemPopUp" text="Add Item" />
+                  <MenuItem mnemonicParsing="false" onAction="#deleteItemPopUp" text="Delete Item" />
+                  <MenuItem mnemonicParsing="false" onAction="#updateItemPopUp" text="Update Item" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewItemsPopUp" text="View Items" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" styleClass=".menu" text="Dealer Operations">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#selectRandomDealersPopUp" text="Select Random Dealers" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewDealerDetailsPopUp" text="View Dealer Details" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewDealerItemsPopUp" text="View Dealer Items" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" styleClass="menu" text="Exit">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#exitApp" text="Exit Application" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="100.0" styleClass="mainPane" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="All available items" textFill="#fff098" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Baskerville" size="21.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets top="40.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" translateY="-50.0">
+               <children>
+                  <AnchorPane prefHeight="100.0" prefWidth="346.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="22.0" text="Current Total Item Count :" textFill="#fff098" AnchorPane.leftAnchor="14.0">
+                           <font>
+                              <Font name="Baskerville" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="59.0" text="Total Inventory Value :" textFill="#fff098">
+                           <font>
+                              <Font name="Baskerville" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalItemCount" layoutX="244.0" layoutY="23.0" textFill="#fff098">
+                           <font>
+                              <Font name="Baskerville" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalInventoryValue" layoutX="244.0" layoutY="60.0" textFill="#fff098">
+                           <font>
+                              <Font name="Baskerville" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <TableView id="viewTable" fx:id="viewTable" translateY="-50.0">
+              <columns>
+                <TableColumn id="viewCategory" fx:id="viewCategory" prefWidth="71.0" text="Category" />
+                <TableColumn id="viewCode" fx:id="viewCode" prefWidth="49.0" text="Code" />
+                  <TableColumn id="viewName" fx:id="viewName" prefWidth="66.0" text="Name" />
+                  <TableColumn id="viewBrand" fx:id="viewBrand" prefWidth="62.0" text="Brand" />
+                  <TableColumn id="viewPrice" fx:id="viewPrice" prefWidth="63.0" text="Price" />
+                  <TableColumn id="viewQuantity" fx:id="viewQuantity" prefWidth="61.0" text="Quantity" />
+                  <TableColumn id="viewPurchasedDate" fx:id="viewPurchasedDate" prefWidth="99.0" text="Purchased Date" />
+                  <TableColumn id="viewImage" fx:id="viewImage" prefWidth="128.0" text="Image" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

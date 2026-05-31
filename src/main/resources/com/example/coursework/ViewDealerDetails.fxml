@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="viewDealerBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.ViewDealerDetailsController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#mainMenuPopUp" text="Go to Menu" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Item Operations">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#addItemPopUp" text="Add Item" />
+                  <MenuItem mnemonicParsing="false" onAction="#deleteItemPopUp" text="Delete Item" />
+                  <MenuItem mnemonicParsing="false" onAction="#updateItemPopUp" text="Update Item" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewItemsPopUp" text="View Items" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Dealer Operations">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#selectDealersPopUp" text="Select Random Dealers" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewDealerDetailsPopUp" text="View Dealer Details" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewDealerItemButtonClicked" text="View Dealer Items" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Exit">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#exitApp" text="Exit Application" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane fx:id="dealerDetailsGridPane" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" styleClass="grid-pane">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="NEVER" />
+                <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="NEVER" />
+                <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="NEVER" />
+              </rowConstraints>
+               <children>
+                  <Label text="Dealer Name" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Baskerville" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="Phone Number" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Baskerville" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="Location" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Baskerville" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="Item Name" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Baskerville" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="Item Brand" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Baskerville" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="Item Price" textFill="WHITE" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Baskerville" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="Item Quantity" textFill="WHITE" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Baskerville" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

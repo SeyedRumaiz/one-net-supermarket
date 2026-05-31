@@ -1,0 +1,6 @@
+1,Milk,Anchor,400.0,23,Dairy,12-06-2025,src/main/resources/images/anchormilk.jpeg,50
+2,Bread,Wonder,120.0,10,Bakery,10-06-2025,src/main/resources/images/wonderbread.jpeg,20
+3,Eggs,Happy Egg,300.0,145,Dairy,11-06-2025,src/main/resources/images/happyegg.png,30
+4,Rice,Golden Harvest,950.0,75,Grains,15-06-2025,src/main/resources/images/goldenharvest.jpg,70
+5,Pen,Atlas,350.0,45,Pens,12-06-2025,src/main/resources/images/atlaspen.jpg,80
+6,Eraser,Maped,550.0,45,Erasers,15-05-2025,src/main/resources/images/mapederaser.jpg,100

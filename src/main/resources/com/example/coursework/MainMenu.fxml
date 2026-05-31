@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.MainMenuController">
+   <top>
+      <MenuBar prefHeight="33.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" styleClass="menu" text="Menu">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#mainMenuPopUp" text="Go to Menu" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" styleClass="menu" text="Item Operations">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#addItemPopUp" text="Add Item" />
+                  <MenuItem mnemonicParsing="false" onAction="#deleteItemPopUp" text="Delete Item" />
+                  <MenuItem mnemonicParsing="false" onAction="#updateItemPopUp" text="Update Item" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewItemsPopUp" text="View Items" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" styleClass="menu" text="Dealer Operations">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#selectRandomDealersPopUp" text="Select Random Dealers" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewDealerDetailsPopUp" text="View Dealer Details" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewDealerItemsPopUp" text="View Dealer Items" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Exit">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#exitApp" text="Exit Application" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" spacing="100.0" styleClass="mainPane" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Welcome to the App!" textFill="#fff098">
+               <font>
+                  <Font name="Baskerville" size="32.0" />
+               </font>
+               <padding>
+                  <Insets top="40.0" />
+               </padding>
+            </Label>
+            <Label text="Current Low Stock Items:" textFill="#fff098">
+               <font>
+                  <Font name="Baskerville" size="21.0" />
+               </font>
+            </Label>
+            <TableView fx:id="table" VBox.vgrow="NEVER">
+              <columns>
+                <TableColumn fx:id="itemCode" prefWidth="75.0" text="Item Code" />
+                <TableColumn fx:id="itemName" prefWidth="75.0" text="Item Name" />
+                  <TableColumn fx:id="itemBrand" prefWidth="100.051025390625" text="Item Brand" />
+                  <TableColumn fx:id="itemQuantity" prefWidth="79.948974609375" text="Item Quantity" />
+                  <TableColumn fx:id="itemPath" prefWidth="268.5" resizable="false" text="Item Image" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
