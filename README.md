@@ -1,6 +1,6 @@
 # OneNet Supermarket
 
-A JavaFX desktop application for managing supermarket inventory and dealer information. This project demonstrates a small JavaFX MVC-style app with file-based persistence, Java object modelling, validation logic, and navigation across multiple screens.
+A JavaFX desktop application for managing supermarket inventory and dealer information. This project demonstrates a small JavaFX app with file-based persistence, Java object modelling, validation logic, and navigation across multiple screens.
 
 ## Key Features
 
@@ -93,8 +93,6 @@ mvn test
 
 To launch the JavaFX application from an IDE, run the `Main` class.
 
-> Note: The provided `pom.xml` contains a JavaFX Maven plugin configuration scaffold. If you want to use `mvn javafx:run`, ensure the plugin's `mainClass` is changed to `com.example.coursework.Main`.
-
 ## Tests
 
 JUnit tests are available for:
@@ -109,21 +107,10 @@ Run tests with:
 mvn test
 ```
 
-## Interview Notes
-
-- Explain how the app separates UI, persistence, and validation responsibilities.
-- Describe how `SceneManager` reduces duplicate scene-switch code.
-- Highlight the text-file-based data loading and the `Item` / `Dealer` object model.
-- Mention validation checks for numeric fields, dates, and image selection.
-- Point out the random dealer selection workflow and how data is passed between controller screens.
-
 ## Possible Improvements
 
 - Replace text file persistence with a structured database or JSON storage.
 - Refactor shared alert/dialog code to a utility class.
-- Move business logic out of controllers and into dedicated service classes.
-- Improve error handling for missing image files and invalid resource paths.
-- Reset inventory total values before recomputing them in `ItemFileHandler.viewItems()`.
 
 ## Project Structure
 
